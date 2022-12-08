@@ -2,9 +2,8 @@ import request from 'request-promise';
 import { load } from 'cheerio';
 import { writeFile } from 'fs';
 
-
 let pages = [];
-const jobs =['dataengineer', 'machinelearningengineer', 'datascientist', 'fullstackdeveloper', 'frontendengineer', 'python', 'nodejs', 'dataanalyst', 'cybersecurity', 'cloudcomputing'];
+const jobs =['Data Engineer', 'Machine Learning Engineer', 'Data Scientist', 'Full Stack Developer', 'Frontend', 'Python Developer', 'Node', 'Data Analyst', 'Cyber Security'];
 const headers = {
     "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9",
     "accept-encoding": "gzip, deflate, br",
@@ -17,7 +16,7 @@ const headers = {
 
 async function CollectUrl() {    
     for (let job of jobs){
-        let page = `https://www.shine.com/job-search/${job}-jobs?q=${job}`;
+        let page = `https://www.shine.com/job-search/${job.replace(" ","-")}-jobs?q=${job.replace(" ","+")}`;
         const response = await request({
             uri:page,
             header: headers,
@@ -28,12 +27,12 @@ async function CollectUrl() {
             pages.push($(this).find('meta').attr('content'));
         });
     }
-};
+}
 
-/**** Loops through urls collected and gets the job description ****/
+/**** Loops through urls collected and gets the job skills ****/
 
 async function CollectData() {
-    let jobDescriptionData = [];
+    let jobSkillsData = [];
     for(let page of pages) {
         const response = await request({
             uri:page,
@@ -42,18 +41,21 @@ async function CollectData() {
         });
         let  $ = load(response);
         let jobTitle = $('h1[class="font-size-24"]').text().trim();
-        let jobDescription = $('div[class="jobDetail_jsrpRightDetail__wUyf7 white-box-border"]').text().trim();
-        jobDescriptionData.push({
+        let jobSkills = "";
+        $('ul[class="keyskills_keySkills_items__ej9_3"]').children().each(function(){
+            jobSkills = jobSkills.concat($(this).text().concat(","));            
+        })
+        jobSkillsData.push({
             jobTitle,
-            jobDescription,
+            jobSkills,
         });
     }    
-    const jdata = JSON.stringify(jobDescriptionData);
+    const jdata = JSON.stringify(jobSkillsData);
     writeFile('./jdata.json', jdata, err =>{
         if (err) throw err;
         console.log('added !');
     })        
-};
+}
 
 /**** Function calls ****/
 

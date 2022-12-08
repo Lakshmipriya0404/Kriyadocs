@@ -1,96 +1,77 @@
-import { writeFile } from 'fs';
 import data from './jdata.json' assert {type: 'json'};
+import { writeFile } from 'fs';
 
-//NLTK's list of english stopwords
-const stopwords = ['i','me','my','myself','we','our','ours','ourselves','you','your','yours','yourself','yourselves','he','him','his','himself','she','her','hers','herself','it','its','itself','they','them','their','theirs','themselves','what','which','who','whom','this','that','these','those','am','is','are','was','were','be','been','being','have','has','had','having','do','does','did','doing','a','an','the','and','but','if','or','because','as','until','while','of','at','by','for','with','about','against','between','into','through','during','before','after','above','below','to','from','up','down','in','out','on','off','over','under','again','further','then','once','here','there','when','where','why','how','all','any','both','each','few','more','most','other','some','such','no','nor','not','only','own','same','so','than','too','very','s','t','can','will','just','don','should','now',];
-const noisewords = ['prepare','make','preferred','dell','yrs','apply','details','looking','immediate','candidates','focus','essential','priority','work','users','years','etc','jobtitle','jobdescription','eligible','completed','updated','change','related','like','may','months','fields','job','description'];
-//Skill Dictionary
-const techskills = [
-    'python','sql','statistics','mongodb','javascript','nodejs','cloud ','aws','react','angular',
-    'linux','cloud technology','artificial intelligence','machine learning','nextjs','django','git','css','bootstrap','big data',
-    'framework','nosql','automation','firewall','analytics','network security'
-];
-const jobs = ['Data Engineer','Machine Learning','Python','Node','Full Stack','Front End','Data Scientist','Analyst','Cyber Security','Cloud']
+const jobs = ['data engineer', 'machine learning engineer', 'data scientist', 'full stack developer', 'frontend', 'python developer', 'node', 'data analyst', 'cyber security'];
 const op = [];
 
+/**** Stores the skills and its count in a array ****/
 
-/****  loops through jobs and pushes the matchedSkill and it's count to an array ****/
-
-for(let job of jobs){
-
-    //stores sum of all jobDescriptionData of a job    
-    const jobset = [];         
-    for(let i = 0; i < data.length; i++) {
-        if((data[i].jobTitle).includes(job)){
-            var jobDescription = data[i].jobDescription;
-            jobset.push(jobDescription);
+function collectSkills() {
+    let iterator = 0;
+    for(let job of jobs){
+        var str ="";
+        for(let i = iterator; i < iterator+19; i++){
+            str = str.concat(data[i].jobSkills);
         }
+        const jobset = str.split(",");
+        const map = jobset.reduce((acc, e) => acc.set(e, (acc.get(e) || 0) + 1), new Map());
+        map.forEach((value, key)=>{
+            if(value>2){
+                op.push({
+                    job,
+                    skill: key,
+                    skillCount: value,
+                });
+            }
+        })
+        iterator +=19; //collected 19 data sets for each job(reduces number of iterations)
     }
-
-    //Cleaning the data
-    var str = jobset.join();
-    const punctuation = /[.,\/#!$%\^&+\*;:{}=\-_`~()]/g;
-    const numless = /\d+/g;
-    const space = /\s{2,}/g;
-    const punctuationless = str
-    .replace(punctuation, "")
-    .replace(numless, "")
-    .toLowerCase()
-    .replace(new RegExp('\\b('+stopwords.join('|')+')\\b', 'g'), ' ')
-    .replace(new RegExp('\\b('+noisewords.join('|')+')\\b', 'g'), ' ')
-    .replace(space, " ")
-    .replace(/\r?\n|\r/g, " ");
-
-    //Extracting the matchedSkills and its count
-    techskills.map((skill)=>{
-        const matchedskill = skill;
-        if(punctuationless.match(skill)){
-            const matchedskillcount = punctuationless.split(skill).length - 1;
-            op.push({
-                job,
-                matchedskill,
-                matchedskillcount,
-            });
-        }
-    });
 }
 
 /**** Function to sort array of objects ****/
 
 function compare( a, b ) {
-    if ( a.matchedskillcount > b.matchedskillcount ){
+    if ( a.skillCount > b.skillCount ){
         return -1;
     }
-    if ( a.matchedskillcount < b.matchedskillcount ){
+    if ( a.skillCount < b.skillCount ){
         return 1;
     }
     return 0;
 }
 
-/**** Sorting the data based on skill count****/
+/**** Sorting the data based on skill count and Storing it into a json file ****/
 
-const final =[];
-const result = op.sort( compare );
-jobs.map((job)=>{
-    let count = 0;
-    for(let i=0; i<result.length; i++){
-        if(job === result[i].job){
-            count += 1;
-            let skill = result[i].matchedskill;
-            let skillcount = result[i].matchedskillcount;
-            final.push({
-                job,
-                skill,
-                skillcount,
-            }); 
-            if(count > 9) break;
+function storeToFile(){
+    const final = [];
+    const result = op.sort( compare );
+    jobs.map((job)=>{
+        let count = 0;
+        for(let i=0; i<result.length; i++){
+            if(job === result[i].job){
+                count += 1;
+                let skill = result[i].skill;
+                let skillcount = result[i].skillCount;            
+                final.push({
+                    job,
+                    skill,
+                    skillcount,
+                });    
+                if(count > 9) break;
+            }
         }
-    }
-});
-
-//Storing the results in a json file
-const output = JSON.stringify(final);
-writeFile('./final.json', output,err =>{
+    });
+    const output = JSON.stringify(final);
+    writeFile('./final.json', output,err =>{
     if (err) throw err;
-    console.log('added!');
+    console.log('added !');
 });
+}
+
+/**** Function calls ****/
+
+function main() {
+    collectSkills();
+    storeToFile();
+}
+main();

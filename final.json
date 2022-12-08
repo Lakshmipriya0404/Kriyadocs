@@ -1,432 +1,377 @@
 [
     {
-        "job": "Data Engineer",
-        "skill": "sql",
-        "skillcount": 31
-    },
-    {
-        "job": "Data Engineer",
-        "skill": "analytics",
-        "skillcount": 27
-    },
-    {
-        "job": "Data Engineer",
+        "job": "data engineer",
         "skill": "python",
-        "skillcount": 18
-    },
-    {
-        "job": "Data Engineer",
-        "skill": "cloud ",
-        "skillcount": 15
-    },
-    {
-        "job": "Data Engineer",
-        "skill": "big data",
-        "skillcount": 15
-    },
-    {
-        "job": "Data Engineer",
-        "skill": "framework",
-        "skillcount": 13
-    },
-    {
-        "job": "Data Engineer",
-        "skill": "aws",
-        "skillcount": 12
-    },
-    {
-        "job": "Data Engineer",
-        "skill": "git",
-        "skillcount": 12
-    },
-    {
-        "job": "Data Engineer",
-        "skill": "nosql",
-        "skillcount": 6
-    },
-    {
-        "job": "Data Engineer",
-        "skill": "statistics",
-        "skillcount": 5
-    },
-    {
-        "job": "Machine Learning",
-        "skill": "machine learning",
-        "skillcount": 15
-    },
-    {
-        "job": "Machine Learning",
-        "skill": "python",
-        "skillcount": 12
-    },
-    {
-        "job": "Machine Learning",
-        "skill": "analytics",
-        "skillcount": 10
-    },
-    {
-        "job": "Machine Learning",
-        "skill": "framework",
         "skillcount": 9
     },
     {
-        "job": "Machine Learning",
+        "job": "data engineer",
         "skill": "sql",
+        "skillcount": 9
+    },
+    {
+        "job": "data engineer",
+        "skill": "java",
+        "skillcount": 9
+    },
+    {
+        "job": "data engineer",
+        "skill": "data warehousing",
         "skillcount": 8
     },
     {
-        "job": "Machine Learning",
-        "skill": "statistics",
-        "skillcount": 5
+        "job": "data engineer",
+        "skill": "informatica",
+        "skillcount": 8
     },
     {
-        "job": "Machine Learning",
-        "skill": "aws",
-        "skillcount": 5
-    },
-    {
-        "job": "Machine Learning",
-        "skill": "cloud ",
-        "skillcount": 3
-    },
-    {
-        "job": "Machine Learning",
-        "skill": "nosql",
-        "skillcount": 3
-    },
-    {
-        "job": "Machine Learning",
-        "skill": "linux",
-        "skillcount": 2
-    },
-    {
-        "job": "Python",
-        "skill": "python",
-        "skillcount": 55
-    },
-    {
-        "job": "Python",
-        "skill": "aws",
-        "skillcount": 21
-    },
-    {
-        "job": "Python",
-        "skill": "cloud ",
-        "skillcount": 20
-    },
-    {
-        "job": "Python",
-        "skill": "django",
-        "skillcount": 15
-    },
-    {
-        "job": "Python",
-        "skill": "git",
-        "skillcount": 15
-    },
-    {
-        "job": "Python",
-        "skill": "sql",
-        "skillcount": 11
-    },
-    {
-        "job": "Python",
-        "skill": "framework",
-        "skillcount": 9
-    },
-    {
-        "job": "Python",
-        "skill": "mongodb",
+        "job": "data engineer",
+        "skill": "data entry",
         "skillcount": 4
     },
     {
-        "job": "Python",
-        "skill": "analytics",
+        "job": "data engineer",
+        "skill": "typing",
+        "skillcount": 4
+    },
+    {
+        "job": "data engineer",
+        "skill": "data entry operator",
+        "skillcount": 4
+    },
+    {
+        "job": "data engineer",
+        "skill": "big data",
         "skillcount": 3
     },
     {
-        "job": "Python",
+        "job": "machine learning engineer",
+        "skill": "machine learning",
+        "skillcount": 16
+    },
+    {
+        "job": "machine learning engineer",
+        "skill": "python",
+        "skillcount": 5
+    },
+    {
+        "job": "machine learning engineer",
+        "skill": "data modeling",
+        "skillcount": 4
+    },
+    {
+        "job": "machine learning engineer",
+        "skill": "implementation python",
+        "skillcount": 4
+    },
+    {
+        "job": "machine learning engineer",
+        "skill": "ml algorithm",
+        "skillcount": 4
+    },
+    {
+        "job": "machine learning engineer",
+        "skill": "java",
+        "skillcount": 4
+    },
+    {
+        "job": "machine learning engineer",
+        "skill": "data science",
+        "skillcount": 3
+    },
+    {
+        "job": "machine learning engineer",
+        "skill": "sql",
+        "skillcount": 3
+    },
+    {
+        "job": "machine learning engineer",
+        "skill": "jquery",
+        "skillcount": 3
+    },
+    {
+        "job": "machine learning engineer",
+        "skill": "internship",
+        "skillcount": 3
+    },
+    {
+        "job": "data scientist",
+        "skill": "data analysis",
+        "skillcount": 13
+    },
+    {
+        "job": "data scientist",
+        "skill": "sql",
+        "skillcount": 13
+    },
+    {
+        "job": "data scientist",
+        "skill": "analytics",
+        "skillcount": 13
+    },
+    {
+        "job": "data scientist",
+        "skill": "machine learning",
+        "skillcount": 12
+    },
+    {
+        "job": "data scientist",
+        "skill": "python",
+        "skillcount": 11
+    },
+    {
+        "job": "data scientist",
+        "skill": "data science",
+        "skillcount": 5
+    },
+    {
+        "job": "data scientist",
+        "skill": "big data",
+        "skillcount": 4
+    },
+    {
+        "job": "data scientist",
+        "skill": "ml",
+        "skillcount": 3
+    },
+    {
+        "job": "full stack developer",
+        "skill": "html",
+        "skillcount": 13
+    },
+    {
+        "job": "full stack developer",
+        "skill": "css",
+        "skillcount": 13
+    },
+    {
+        "job": "full stack developer",
+        "skill": "php",
+        "skillcount": 7
+    },
+    {
+        "job": "full stack developer",
+        "skill": "full stack",
+        "skillcount": 7
+    },
+    {
+        "job": "full stack developer",
         "skill": "javascript",
-        "skillcount": 2
+        "skillcount": 6
     },
     {
-        "job": "Node",
-        "skill": "nodejs",
-        "skillcount": 20
+        "job": "full stack developer",
+        "skill": "jquery",
+        "skillcount": 6
     },
     {
-        "job": "Node",
+        "job": "full stack developer",
+        "skill": "mysql",
+        "skillcount": 6
+    },
+    {
+        "job": "frontend",
+        "skill": "javascript",
+        "skillcount": 7
+    },
+    {
+        "job": "frontend",
+        "skill": "front end",
+        "skillcount": 5
+    },
+    {
+        "job": "frontend",
+        "skill": "react.js",
+        "skillcount": 4
+    },
+    {
+        "job": "frontend",
+        "skill": "agile",
+        "skillcount": 4
+    },
+    {
+        "job": "frontend",
+        "skill": "angularjs",
+        "skillcount": 4
+    },
+    {
+        "job": "frontend",
+        "skill": "java",
+        "skillcount": 3
+    },
+    {
+        "job": "frontend",
+        "skill": "angular",
+        "skillcount": 3
+    },
+    {
+        "job": "frontend",
+        "skill": "front end development",
+        "skillcount": 3
+    },
+    {
+        "job": "python developer",
+        "skill": "python",
+        "skillcount": 16
+    },
+    {
+        "job": "python developer",
+        "skill": "django",
+        "skillcount": 13
+    },
+    {
+        "job": "python developer",
+        "skill": "html",
+        "skillcount": 7
+    },
+    {
+        "job": "python developer",
+        "skill": "css",
+        "skillcount": 7
+    },
+    {
+        "job": "python developer",
+        "skill": "sql",
+        "skillcount": 6
+    },
+    {
+        "job": "python developer",
+        "skill": "flask",
+        "skillcount": 5
+    },
+    {
+        "job": "python developer",
+        "skill": "mysql",
+        "skillcount": 5
+    },
+    {
+        "job": "python developer",
+        "skill": "javascript",
+        "skillcount": 4
+    },
+    {
+        "job": "python developer",
+        "skill": "java",
+        "skillcount": 4
+    },
+    {
+        "job": "python developer",
+        "skill": "api",
+        "skillcount": 4
+    },
+    {
+        "job": "node",
+        "skill": "node.js",
+        "skillcount": 18
+    },
+    {
+        "job": "node",
+        "skill": "react.js",
+        "skillcount": 7
+    },
+    {
+        "job": "node",
+        "skill": "javascript",
+        "skillcount": 6
+    },
+    {
+        "job": "node",
+        "skill": "aws",
+        "skillcount": 4
+    },
+    {
+        "job": "node",
+        "skill": "express.js",
+        "skillcount": 3
+    },
+    {
+        "job": "node",
+        "skill": "angularjs",
+        "skillcount": 3
+    },
+    {
+        "job": "data analyst",
+        "skill": "data analysis",
+        "skillcount": 19
+    },
+    {
+        "job": "data analyst",
         "skill": "sql",
         "skillcount": 16
     },
     {
-        "job": "Node",
-        "skill": "javascript",
-        "skillcount": 15
+        "job": "data analyst",
+        "skill": "reporting",
+        "skillcount": 13
     },
     {
-        "job": "Node",
-        "skill": "react",
-        "skillcount": 15
-    },
-    {
-        "job": "Node",
-        "skill": "framework",
+        "job": "data analyst",
+        "skill": "customer relations",
         "skillcount": 11
     },
     {
-        "job": "Node",
-        "skill": "angular",
-        "skillcount": 9
-    },
-    {
-        "job": "Node",
-        "skill": "mongodb",
-        "skillcount": 5
-    },
-    {
-        "job": "Node",
-        "skill": "git",
-        "skillcount": 4
-    },
-    {
-        "job": "Node",
-        "skill": "css",
-        "skillcount": 4
-    },
-    {
-        "job": "Node",
-        "skill": "aws",
-        "skillcount": 3
-    },
-    {
-        "job": "Full Stack",
-        "skill": "react",
-        "skillcount": 9
-    },
-    {
-        "job": "Full Stack",
-        "skill": "sql",
-        "skillcount": 8
-    },
-    {
-        "job": "Full Stack",
-        "skill": "nodejs",
-        "skillcount": 8
-    },
-    {
-        "job": "Full Stack",
-        "skill": "framework",
-        "skillcount": 8
-    },
-    {
-        "job": "Full Stack",
-        "skill": "javascript",
-        "skillcount": 7
-    },
-    {
-        "job": "Full Stack",
-        "skill": "css",
-        "skillcount": 4
-    },
-    {
-        "job": "Full Stack",
-        "skill": "angular",
-        "skillcount": 3
-    },
-    {
-        "job": "Full Stack",
-        "skill": "nextjs",
-        "skillcount": 3
-    },
-    {
-        "job": "Full Stack",
-        "skill": "python",
-        "skillcount": 2
-    },
-    {
-        "job": "Full Stack",
-        "skill": "cloud ",
-        "skillcount": 2
-    },
-    {
-        "job": "Front End",
-        "skill": "react",
+        "job": "data analyst",
+        "skill": "microsoft excel",
         "skillcount": 11
     },
     {
-        "job": "Front End",
-        "skill": "css",
-        "skillcount": 10
-    },
-    {
-        "job": "Front End",
-        "skill": "javascript",
-        "skillcount": 6
-    },
-    {
-        "job": "Front End",
-        "skill": "angular",
+        "job": "data analyst",
+        "skill": "data analytics",
         "skillcount": 5
     },
     {
-        "job": "Front End",
-        "skill": "framework",
-        "skillcount": 5
-    },
-    {
-        "job": "Front End",
-        "skill": "git",
+        "job": "data analyst",
+        "skill": "data management",
         "skillcount": 4
     },
     {
-        "job": "Front End",
-        "skill": "nodejs",
-        "skillcount": 2
-    },
-    {
-        "job": "Front End",
-        "skill": "automation",
-        "skillcount": 2
-    },
-    {
-        "job": "Front End",
-        "skill": "python",
-        "skillcount": 1
-    },
-    {
-        "job": "Front End",
-        "skill": "bootstrap",
-        "skillcount": 1
-    },
-    {
-        "job": "Data Scientist",
-        "skill": "analytics",
-        "skillcount": 19
-    },
-    {
-        "job": "Data Scientist",
-        "skill": "sql",
+        "job": "cyber security",
+        "skill": "cyber security",
         "skillcount": 17
     },
     {
-        "job": "Data Scientist",
-        "skill": "machine learning",
+        "job": "cyber security",
+        "skill": "external audit",
+        "skillcount": 11
+    },
+    {
+        "job": "cyber security",
+        "skill": "problem solving",
+        "skillcount": 11
+    },
+    {
+        "job": "cyber security",
+        "skill": "firewalls",
         "skillcount": 10
     },
     {
-        "job": "Data Scientist",
-        "skill": "python",
-        "skillcount": 8
-    },
-    {
-        "job": "Data Scientist",
-        "skill": "statistics",
-        "skillcount": 7
-    },
-    {
-        "job": "Data Scientist",
-        "skill": "big data",
-        "skillcount": 5
-    },
-    {
-        "job": "Data Scientist",
-        "skill": "framework",
-        "skillcount": 3
-    },
-    {
-        "job": "Data Scientist",
-        "skill": "git",
-        "skillcount": 2
-    },
-    {
-        "job": "Data Scientist",
-        "skill": "react",
-        "skillcount": 1
-    },
-    {
-        "job": "Data Scientist",
-        "skill": "linux",
-        "skillcount": 1
-    },
-    {
-        "job": "Analyst",
-        "skill": "analytics",
-        "skillcount": 8
-    },
-    {
-        "job": "Analyst",
-        "skill": "firewall",
-        "skillcount": 7
-    },
-    {
-        "job": "Analyst",
-        "skill": "automation",
-        "skillcount": 6
-    },
-    {
-        "job": "Analyst",
-        "skill": "network security",
-        "skillcount": 6
-    },
-    {
-        "job": "Analyst",
-        "skill": "statistics",
-        "skillcount": 3
-    },
-    {
-        "job": "Analyst",
-        "skill": "python",
-        "skillcount": 2
-    },
-    {
-        "job": "Cyber Security",
-        "skill": "firewall",
-        "skillcount": 7
-    },
-    {
-        "job": "Cyber Security",
-        "skill": "analytics",
-        "skillcount": 7
-    },
-    {
-        "job": "Cyber Security",
-        "skill": "automation",
-        "skillcount": 6
-    },
-    {
-        "job": "Cyber Security",
-        "skill": "network security",
-        "skillcount": 6
-    },
-    {
-        "job": "Cyber Security",
-        "skill": "statistics",
-        "skillcount": 1
-    },
-    {
-        "job": "Cloud",
-        "skill": "cloud ",
+        "job": "cyber security",
+        "skill": "networking",
         "skillcount": 10
     },
     {
-        "job": "Cloud",
-        "skill": "django",
-        "skillcount": 3
+        "job": "cyber security",
+        "skill": "troubleshooting",
+        "skillcount": 10
     },
     {
-        "job": "Cloud",
-        "skill": "python",
-        "skillcount": 2
+        "job": "cyber security",
+        "skill": "network security",
+        "skillcount": 10
     },
     {
-        "job": "Cloud",
-        "skill": "sql",
-        "skillcount": 1
+        "job": "cyber security",
+        "skill": "cisco",
+        "skillcount": 10
     },
     {
-        "job": "Cloud",
-        "skill": "mongodb",
-        "skillcount": 1
+        "job": "cyber security",
+        "skill": "ip",
+        "skillcount": 9
+    },
+    {
+        "job": "cyber security",
+        "skill": "risk analysis",
+        "skillcount": 9
     }
 ]
